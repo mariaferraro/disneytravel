@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/tailwind.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <title>Disney Travel</title>
+    </head>
+<body class="font-Lato dark:bg-gray-900">
+
+    <!-- Header -->
+    <nav class="absolute z-50 w-full h-auto">
+    <div class="flex flex-wrap items-center justify-between w-full py-8 md:py-0 px-4 text-lg text-primary rounded-b-xl bg-transparent md:rounded-b-none md:max-w-screen-xl md:m-auto">
+    <div class="w-[150px] h-auto">
+      <a href="#" class="w-full">
+        <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2110.94 968.31"><defs><style>.c{fill:#0ea6b1;}</style></defs><g><path class="b fill-gray-900 dark:fill-white" d="m31.3,73.04c-14.35,0-31.3-1.96-31.3-10.43C0,2.61,105.64,0,150.64,0c58.69,0,133.68,18.26,197.59,41.08,97.17,35.21,294.1,152.59,294.1,286.93,0,118.68-127.81,175.42-246.5,175.42-30,0-65.86-5.22-95.21-9.78-1.96,7.17-3.26,12.39-7.83,27.39-7.83,1.3-14.35,2.61-22.82,2.61l-15-1.3c-9.78-11.74-13.04-30.65-16.96-50.87-59.34-34.56-97.82-63.91-115.42-84.12-15-15.65-31.95-36.52-31.95-56.73,0-10.43,6.52-19.56,21.52-30,30.65-22.82,69.78-35.21,133.68-46.3l1.3-26.74c.65-6.52,7.17-76.3,22.17-89.34,24.13,19.56,26.74,39.78,28.69,69.78.65,13.04,1.3,26.74,3.26,41.08h9.13c45.65,0,185.2,11.74,185.2,77.6,0,15.65-22.82,45-45,45-7.83,0-22.17-3.26-28.69-8.48,9.78-11.09,24.13-20.87,28.04-29.35-13.04-15.65-83.47-33.91-134.99-33.91-8.48,0-11.74,0-16.96.65l.65,142.81c20.87,13.04,46.3,14.35,62.6,14.35,71.73,0,220.42-12.39,220.42-128.47S434.96,125.86,325.41,84.12c-76.95-29.35-149.99-44.34-235.41-44.34-17.61,0-35.87,1.3-53.47,5.87-11.09,2.61-15,5.22-15,7.83,0,4.56,22.17,7.17,24.78,8.48,1.96,1.3,3.26,3.26,3.26,5.22,0,1.3-.65,3.26-2.61,5.22-2.61,0-8.48.65-15.65.65Zm211.94,228.89c-64.56,5.22-136.29,11.74-136.29,34.56,0,17.61,30,39.13,48.26,52.82,20.87,16.95,52.17,32.61,82.17,39.13l5.87-126.51Z"/><path class="b fill-gray-900 dark:fill-white" d="m800.8,70.43c11.09,0,36.52,11.09,36.52,35.21,0,50.21-86.08,107.6-129.12,107.6-13.04,0-29.35-1.96-41.08-5.87-7.17,8.48-9.78,15.65-19.56,16.96-6.52-1.3-15-13.69-16.3-28.04,0-3.26,1.3-7.83,1.96-11.09-9.78-13.04-16.96-24.78-16.96-39.13,0-43.04,64.56-100.43,126.51-100.43,28.69,0,51.52,11.09,55.43,25.43.65,0,1.3-.65,2.61-.65Zm-149.99,76.95c1.3,0,2.61-.65,3.26-1.3,8.48-11.74,35.87-37.82,50.87-52.17v-.65c0-.65,0-1.96-1.3-3.26-32.61,6.52-52.82,30.65-55.43,56.08.65.65,1.3,1.3,2.61,1.3Zm61.95,142.16c1.3,52.82,6.52,108.25,6.52,160.42,0,10.43-3.91,22.82-20.22,22.82-5.22,0-13.04-1.96-18.26-3.91-8.48-2.61-12.39-28.04-13.04-34.56,0-33.26.65-33.91,1.96-68.47.65-9.13,2.61-45,11.09-110.86.65-3.26,1.3-4.56,3.91-4.56,23.48.65,26.74,14.35,28.04,39.13Zm-20.22-114.77h14.35c32.61,0,99.12-22.17,99.12-61.95,0-9.13,0-16.3-16.96-16.3-37.82,0-74.99,36.52-101.73,73.04,0,1.3,3.26,5.22,5.22,5.22Z"/><path class="b fill-gray-900 dark:fill-white" d="m786.45,310.41c0,.65.65,1.3,1.3,1.3,24.78,9.13,41.08,12.39,67.17,13.69,44.34,3.26,110.21,3.91,110.21,65.21,0,70.43-78.25,74.34-99.12,74.34-55.43,0-104.34-35.21-104.34-61.95,0-31.95,33.26-40.43,59.34-40.43s57.39,6.52,84.12,20.22c.65.65,1.3,1.3,1.3,2.61,0,1.96-.65,3.26-1.3,3.91-5.22,5.22-20.87,13.04-37.17,13.04-18.91,0-45-15.65-70.43-15.65-9.13,0-20.22,1.96-20.22,16.3,0,16.3,29.35,16.3,52.82,16.3,12.39,0,102.38-10.43,102.38-34.56,0-22.82-68.47-32.61-96.51-33.26-74.99-1.96-84.77-9.78-84.77-37.17,0-61.3,123.9-65.86,129.77-65.86,32.61,0,61.95,5.87,83.47,11.09,4.56.65,7.17,2.61,7.17,9.78-.65,7.83-7.17,12.39-14.35,15-5.22,1.3-16.3,3.26-21.52,3.91-22.82,3.26-89.99,5.87-110.86,9.78-21.52,3.26-30.65,5.87-37.17,9.78-.65.65-1.3,1.96-1.3,2.61Z"/><path class="b fill-gray-900 dark:fill-white" d="m1104.03,228.89c0-5.22.65-13.69,6.52-13.69,18.26,0,70.43,64.56,70.43,155.2,0,39.78-18.26,87.38-50.21,87.38-37.82,0-77.6-121.29-86.73-121.29-1.3,0-3.26,1.96-4.56,7.17-1.96,7.83-3.26,76.3-6.52,96.51-1.96,9.13-5.22,30.65-19.56,30.65-20.87,0-25.43-35.87-25.43-51.52,0-33.91,16.96-153.9,45-153.9,19.56,0,58.69,81.51,93.25,124.55,2.61,2.61,3.91,5.22,4.56,5.22,3.91,0,3.91-5.87,3.91-16.96,0-59.99-12.39-77.6-28.69-138.9l-1.96-7.83v-2.61Z"/><path class="b fill-gray-900 dark:fill-white" d="m1353.12,440.18c-17.61,13.69-57.39,44.34-100.43,44.34-35.87,0-52.17-26.74-52.17-54.78,0-15,9.13-35.21,16.3-55.43-1.96-6.52-5.22-10.43-5.22-16.95,0-5.22,1.96-7.83,3.26-13.04,5.22-1.96,11.09-4.56,16.96-5.22l15.65-35.87c-15-7.17-37.17-15.65-37.17-29.34,0-7.17,5.87-9.13,16.95-9.78,27.39-1.3,59.34-13.04,112.82-13.04,5.87,0,13.04.65,26.74,4.56,5.87,7.17,20.87,20.87,20.87,31.95,0,6.52-22.82,13.69-35.21,14.35-28.04,1.96-34.56,1.3-52.17,1.96-3.26,0-6.52,0-9.78.65-2.61,2.61-7.83,11.09-7.83,27.39,0,2.61,1.3,6.52,5.87,6.52h48.26l9.13,1.3c3.26,4.56,3.91,13.04,3.91,18.91,0,5.22-1.3,15-7.17,15.65-11.74.65-41.08,1.96-73.69,1.96-1.3,0-2.61,0-3.91,2.61-3.26,13.69-9.13,29.35-15.65,43.69,3.26,0,28.04-6.52,69.78-10.43,6.52-.65,15-1.3,21.52-1.3,7.83,0,16.3,11.09,16.3,19.56,0,3.91-.65,7.83-3.91,9.78Z"/><path class="b fill-gray-900 dark:fill-white" d="m1391.6,662.55c-26.08-2.61-43.69-24.13-43.69-52.17,0-12.39,10.43-82.82,46.95-170.2-7.17-15.65-11.74-31.95-11.74-47.6,0-67.17,65.21-146.73,78.25-148.03,9.13,1.3,10.43,6.52,10.43,18.26,0,13.04-7.83,21.52-28.04,52.17-10.43,16.3-25.43,43.04-25.43,66.52,0,2.61,0,6.52,1.96,7.83h1.3c.65,0,1.3-.65,2.61-2.61,31.3-41.74,95.86-119.99,129.12-119.99s42.39,54.78,42.39,80.86c0,76.95-96.51,131.73-140.21,131.73-4.56,0-9.13.65-14.35,1.3-25.43,74.34-30,106.29-47.6,176.72l-1.96,5.22Zm146.07-269.32c18.26-15.65,28.04-37.17,28.04-63.91,0-7.17,0-18.26-8.48-18.26-11.09,0-35.87,29.35-45.65,41.74-7.17,9.78-33.26,59.34-37.82,70.43,22.17-2.61,43.69-12.39,63.91-30Z"/></g><g><path class="b fill-gray-900 dark:fill-white" d="m1015.84,946.79c-40.43-51.52-66.52-136.29-66.52-197.59,0-65.21,23.48-120.64,59.34-175.42-39.13-13.04-81.51-32.61-110.21-48.26-21.52-11.74-47.6-31.3-47.6-56.73,0-14.35,16.96-30.65,35.87-30.65h2.61c3.91,0,3.91,2.61,3.91,4.56s0,3.26-1.3,4.56c-9.78,10.43-14.35,17.61-14.35,23.48s7.17,11.74,17.61,19.56c24.13,19.56,88.69,37.82,140.86,46.95,56.08-54.78,134.99-85.43,212.59-85.43,16.3,0,41.08,1.3,41.08,21.52,0,82.82-100.43,119.34-166.29,119.34-19.56,0-39.78-1.96-59.99-5.87-34.56,58.04-57.39,132.38-57.39,203.46,0,57.39,15.65,106.29,45.65,151.29,6.52,9.78,11.09,15,11.09,20.21,0,3.91-1.96,6.52-8.48,6.52-14.35-1.3-28.69-9.78-38.47-21.52Zm88.04-401.05c7.83.65,16.3.65,23.48.65,43.04,0,85.43-10.43,107.6-46.95-16.3,0-35.21,4.56-44.34,6.52-29.35,7.17-61.95,20.87-86.73,39.78Z"/><path class="b fill-gray-900 dark:fill-white" d="m1169.74,903.75c-14.35,0-31.3-12.39-31.3-31.3.65-56.08,6.52-88.04,24.13-142.16,2.61-9.78,15.65-14.35,26.74-14.35,9.13,0,16.96,3.26,16.96,11.09-13.04,54.78-15.65,107.6-19.56,161.07-1.3,10.43-8.48,15.65-16.96,15.65Zm-14.35-202.81c0-15.65,41.08-31.3,58.69-31.3,78.25,0,123.9,34.56,123.9,97.82,0,21.52-11.74,39.78-28.69,52.82,16.95,18.91,28.69,43.69,42.39,67.17,1.96,3.26,2.61,7.83,2.61,11.09,0,13.04-11.09,22.82-19.56,22.82-2.61,0-4.56-.65-6.52-2.61-1.96-2.61-33.26-46.95-58.04-78.25-12.39,3.26-24.78,5.22-36.52,5.22-20.87,0-35.21-14.35-35.21-33.26,0-12.39,20.21-24.13,36.52-24.13s30,3.26,41.74,8.48c8.48-10.43,14.35-22.17,14.35-31.3,0-50.21-56.73-58.69-87.38-58.69-13.04,0-24.78,7.83-35.21,8.48-9.13-4.56-13.04-9.78-13.04-14.35Zm97.17,118.69c-7.83-7.83-9.78-9.13-18.26-9.13-7.83.65-12.39,3.26-12.39,7.17,0,6.52,6.52,9.13,11.09,9.13,5.87,0,11.09-1.3,19.56-7.17Z"/><path class="b fill-gray-900 dark:fill-white" d="m1479.49,652.04h3.91c8.48,0,17.61,11.09,18.91,20.21,3.26,11.09,15,43.04,17.61,60.65,7.83,56.73,13.04,88.69,13.04,138.9,0,22.82,0,28.69-1.96,36.52-1.96,1.3-4.56,1.96-7.17,1.96-12.39,0-22.17-13.69-29.35-30.65l-2.61-37.82h-20.87c-22.82,0-30.65-.65-35.87-.65-1.96,0-3.26,0-3.91.65-9.78,3.26-14.35,28.69-23.48,52.82l-7.17,18.91c-3.26,3.26-9.13,5.22-15.65,5.22-3.91,0-7.83-1.3-13.04-1.96-9.13-9.78-12.39-18.26-12.39-31.95,0-15.65,6.52-35.21,18.26-56.08,0-10.43-5.87-21.52-19.56-23.48l1.3-12.39c2.61.65,5.87.65,9.13.65h21.52c10.43-22.17,33.26-68.47,48.91-91.95l31.3-38.47,1.96-7.83c1.96-3.26,3.91-3.26,7.17-3.26Zm-12.39,138.9c5.87,0,13.04,0,18.91-.65,0-12.39-.65-41.08-9.13-56.08-9.13,2.61-23.48,40.43-28.04,56.08,5.87.65,12.39.65,18.26.65Z"/><path class="b fill-gray-900 dark:fill-white" d="m1585.78,670.3c6.52,11.09,13.69,27.39,22.17,47.6l31.95,106.29c.65,3.26,2.61,7.83,6.52,13.04l61.3-134.34c7.83-15.65,13.04-28.69,22.17-33.26.65-.65,1.3-.65,3.26-.65,8.48,0,26.08,11.09,26.08,19.56,0,12.39-3.91,21.52-14.35,45l-59.34,133.68c-3.91,9.13-8.48,18.26-15,26.08-11.09,5.87-21.52,7.83-32.61,7.83-7.83,0-15.65-1.3-24.13-3.91l-15-53.47c-6.52-20.87-41.08-111.51-51.52-136.29v-4.57c0-12.39,5.22-23.48,15-32.61h23.48Z"/><path class="b fill-gray-900 dark:fill-white" d="m1911.18,869.84c-17.61,13.7-57.39,44.34-100.43,44.34-35.87,0-52.17-26.74-52.17-54.78,0-15,9.13-35.21,16.3-55.43-1.96-6.52-5.22-10.43-5.22-16.96,0-5.22,1.96-7.83,3.26-13.04,5.22-1.96,11.09-4.56,16.96-5.22l15.65-35.87c-15-7.17-37.17-15.65-37.17-29.35,0-7.17,5.87-9.13,16.96-9.78,27.39-1.3,59.34-13.04,112.82-13.04,5.87,0,13.04.65,26.74,4.57,5.87,7.17,20.87,20.87,20.87,31.95,0,6.52-22.82,13.69-35.21,14.35-28.04,1.96-34.56,1.3-52.17,1.96-3.26,0-6.52,0-9.78.65-2.61,2.61-7.83,11.09-7.83,27.39,0,2.61,1.3,6.52,5.87,6.52h48.26l9.13,1.3c3.26,4.56,3.91,13.04,3.91,18.91,0,5.22-1.3,15-7.17,15.65-11.74.65-41.08,1.96-73.69,1.96-1.3,0-2.61,0-3.91,2.61-3.26,13.69-9.13,29.34-15.65,43.69,3.26,0,28.04-6.52,69.78-10.43,6.52-.65,15-1.3,21.52-1.3,7.83,0,16.3,11.09,16.3,19.56,0,3.91-.65,7.83-3.91,9.78Z"/><path class="b fill-gray-900 dark:fill-white" d="m2034.43,682.04c-.65,46.95-19.56,60.65-30.65,151.29v2.61c0,5.87,3.26,11.09,7.17,11.09,9.13,0,23.48-7.83,43.69-15,9.78-3.91,22.82-10.43,29.34-10.43s7.17,11.09,7.17,15c0,28.04-48.26,69.78-80.21,69.78-43.69,0-49.56-42.39-49.56-75.64,0-48.91,27.39-121.95,41.74-148.68,3.91-7.17,8.48-10.43,20.22-14.35,9.78,0,11.09,4.56,11.09,14.35Z"/></g><path class="c" d="m1806.32,267.11c-104.89,3.33-136.07,78.27-143.22,118.86,9.31-15.05,38.65-48.06,81.84-48.06,50.34,0,88.66,56.18,112.04,73.72,28.41,21.31,85.49,49.44,160.43,26.63,59.75-18.19,87.47-81.62,93.53-111.72-28.9,39.29-72.74,62.9-126.98,35.07-37.35-19.16-65.28-98.07-177.64-94.5Z"/><path class="c" d="m1657.91,445.4c-104.89,3.33-136.07,78.27-143.22,118.86,9.31-15.05,38.65-48.06,81.84-48.06,50.34,0,88.66,56.18,112.04,73.72,28.41,21.31,85.49,49.44,160.43,26.63,59.75-18.19,87.47-81.62,93.53-111.72-28.9,39.29-72.74,62.9-126.98,35.07-37.35-19.16-65.28-98.07-177.64-94.5Z"/></svg>
+    </a>
+    </div>
+    
+    <button id="menu-button">
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path class="current-color dark:stroke-white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+   <div id="menu" class="hidden w-full md:flex md:items-center md:w-auto">
+      <ul class="pt-4 md:mt-6 mb-6 text-base text-gray-700 md:flex md:justify-between md:pt-0 items-center">
+        <!--
+        <li>
+          <a class="p-2 block text-lg transition ease-in border-b-2 border-transparent hover:text-secundary hover:border-primary dark:text-gray-100 text-shadow-white shadow-white dark:text-shadow-none" href="#">Categories</a>
+        </li>
+        -->
+        <li>
+          <a class="p-2 block text-lg transition ease-in border-b-2 border-transparent hover:text-secundary hover:border-primary dark:text-gray-100 text-shadow-white shadow-white dark:text-shadow-none" href="#popular">Popular Places</a>
+        </li>
+        <li>
+          <a class="p-2 block text-lg transition ease-in border-b-2 border-transparent hover:text-secundary hover:border-primary dark:text-gray-100 text-shadow-white shadow-white dark:text-shadow-none" href="#experiences">Experiences</a>
+        </li>
+        <!-- Dark Mode button -->
+        <li id="toggle">
+            <svg class="block dark:hidden w-10 h-10 p-2 bg-white rounded-3xl stroke-gray-700 dark:bg-gray-700 dark:stroke-white transition ease-in duration-200 hover:bg-primary hover:stroke-white dark:hover:bg-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>  
+            <svg class="hidden dark:block w-10 h-10 p-2 bg-white rounded-3xl stroke-gray-700 dark:bg-gray-700 dark:stroke-white transition ease-in duration-200 hover:bg-primary hover:stroke-white dark:hover:bg-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>    
+        <!-- / Dark Mode button -->
+        </li>
+      </ul>
+     </div>
+
+    </div>
+    </nav>
+    <!-- / Header -->
+
+        
+        <!-- Search Hero -->
+        <section id="hero" class="w-full h-screen items-center bg-beach dark:bg-beachDark bg-center bg-cover text-center relative flex z-10">   
+            
+            <h1 id="discover" class="z-10 t-uppercase text-white dark:text-gray-300 text-center font-black uppercase text-big absolute m-auto w-full md:mt-6 align-middle justify-center -translate-y-[130%] sm:-translate-y-[80%] md:-translate-y-[75%] lg:-translate-y-[65%] xl:-translate-y-[60%] 2xl:-translate-y-[50%]">Discover</h1>
+            <div id="layer1" class="z-20 bg-water dark:bg-waterDark bg-cover bg-top w-full absolute bottom-0 h-[60%]"></div>
+            <div class="w-full h-1/6 z-30 -mb-1 bg-gradient-to-t from-white dark:from-gray-900 bottom-0 absolute"></div>
+                    
+            <div class="z-40 w-full h-auto absolute inset-x-0 bottom-1/4 flex flex-col">
+                <input class="rounded-3xl p-3 outline-none shadow-md w-80 max-w-full m-auto mb-5 transition duration-300 focus-within:shadow-sm focus:scale-110 dark:bg-gray-900 dark:text-gray-100" placeholder="Cancun" type="search" name="" id="">
+                <a href="/disneytravel/travel.html" class="text-lg bg-white text-secundary p-2 rounded-3xl w-32 m-auto dark:bg-gray-800 dark:text-gray-100 transition duration-500 ease-in-out hover:bg-secundary hover:text-white hover:scale-110 dark:hover:bg-secundary">
+                    Explore
+                </a>
+            </div>
+        </section>
+        <!-- / Search Hero -->
+        
+
+    <main class="w-full h-auto relative z-50 bg-white dark:bg-gray-900">
+
+        <!-- Cards -->
+        <section id="popular" class="p-6 md:max-w-screen-xl m-auto">
+            <h2 class="Title">Most popular</h2>
+            
+            <div class="w-auto h-96 -mt-10 items-center overflow-x-auto overscroll-x-contain flex align-top space-x-4 m-auto scrollbar-hide">
+                
+                <!-- Card 1 -->
+                <a href="/disneytravel/travel.html">
+                    <div class="Card bg-viajesPandora"> 
+                        <div class="InsideCard">
+                            <h3 class="text-secundary text-md font-bold">Pandora's Reefs</h3>
+                            <p class="text-terciary text-sm">Avatar</p>
+                        </div>
+                    </div>
+                    </a>
+                <!-- / Card 1 -->
+                <!-- Card 2 -->
+                <a href="/disneytravel/travel.html">
+                <div class="Card bg-viajesPortorosso"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Portorosso</h3>
+                        <p class="text-terciary text-sm">Italia</p>
+                    </div>
+                </div>
+                </a>
+                <!-- / Card 2 -->
+                <!-- Card 3 -->
+                <a href="/disneytravel/travel.html">
+                <div class="Card bg-viajesAtlantis"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Atlantis</h3>
+                        <p class="text-terciary text-sm">The Lost Empire</p>
+                    </div>
+                </div>
+                </a>
+                <!-- / Card 3 -->
+                <!-- Card 5 -->
+                <a href="/disneytravel/travel.html">
+                <div class="Card bg-viajesAsgard"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Midgard</h3>
+                        <p class="text-terciary text-sm">Asgard</p> 
+                    </div>
+                </div>
+                </a>
+                <!-- / Card 5 -->
+                <!-- Card 6 -->
+                <a href="/disneytravel/travel.html">
+                <div class="Card bg-viajesArendelle"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Arendelle</h3>
+                        <p class="text-terciary text-sm">Norway</p>
+                    </div>
+                </div>
+                </a>
+                <!-- / Card 6 -->
+                <!-- Card 7 -->
+                <a href="/disneytravel/travel.html">
+                    <div class="Card bg-viajesWonderland"> 
+                        <div class="InsideCard">
+                            <h3 class="text-secundary text-md font-bold">Wonderland</h3>
+                            <p class="text-terciary text-sm">Through the mirror</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- / Card 7-->
+                
+            </div>
+            
+        </section>
+        <!-- / Cards -->
+        
+        <!-- Experiences -->
+        <section id="experiences" class="p-6 md:max-w-screen-xl m-auto">
+            <h2 class="Title">Top Experiences</h2>
+            
+            <div class="w-full h-full mt-10 mb-10 grid grid-cols-1 md:grid-cols-4 md:place-items-center gap-4 items-center justify-center">
+                
+                <!-- Exp Card 1-->
+                <div class="ExperienceCard bg-expCove md:bg-expCoveLg md:h-[49rem] md:row-span-2 md:col-span-2">
+                    <div class="w-full h-1/2 bg-gradient-to-t from-slate-900 rounded-2xl bottom-0 absolute"></div>
+                    <div class="absolute bottom-2 p-6">
+                        <p class="text-white text-2xl font-bold dark:text-gray-100">Visit the Cove of the Ancestors</p>
+                        <p class="text-white">Pandora's Reefs</p>
+                    </div>
+                </div>
+                <!-- / Exp Card 1-->
+                <!-- Exp Card 2-->
+                <div class="ExperienceCard bg-expLantern md:h-96 md:row-span-1 md:col-span-1">
+                    <div class="w-full h-1/2 bg-gradient-to-t from-slate-900 rounded-2xl bottom-0 absolute"></div>
+                    <div class="absolute bottom-2 p-6">
+                        <p class="text-white text-2xl font-bold dark:text-gray-100">Lantern Night</p>
+                        <p class="text-white dark:text-gray-200">Corona Kingdom</p>
+                    </div>
+                </div>
+                <!-- / Exp Card 2 ->
+                <!-- Exp Card 3 -->
+                <div class="ExperienceCard bg-expEncanto md:h-96 md:row-span-1 md:col-span-1">
+                    <div class="w-full h-1/2 bg-gradient-to-t from-slate-900 rounded-2xl bottom-0 absolute"></div>
+                    <div class="absolute bottom-2 p-6">
+                        <p class="text-white text-2xl font-bold dark:text-gray-100">Visit Madrigal House</p>
+                        <p class="text-white dark:text-gray-200">Encanto</p>
+                    </div>
+                </div>
+                <!-- / Exp Card 3 ->
+                <!-- Exp Card 4 -->
+                <div class="ExperienceCard bg-expCalafate md:h-96 md:row-span-1 md:col-span-1">
+                    <div class="w-full h-1/2 bg-gradient-to-t from-slate-900 rounded-2xl bottom-0 absolute"></div>
+                    <div class="absolute bottom-2 p-6">
+                        <p class="text-white text-2xl font-bold dark:text-gray-100">Trek Elsa's Ice Castle</p>
+                        <p class="text-white dark:text-gray-200">Arendelle</p>
+                    </div>
+                </div>
+                <!-- / Exp Card 4 ->
+                <!-- Exp Card 5 -->
+                <div class="ExperienceCard bg-expStarwars md:h-96 md:row-span-1 mdlg:col-span-1">
+                    <div class="w-full h-1/2 bg-gradient-to-t from-slate-900 rounded-2xl bottom-0 absolute"></div>
+                    <div class="absolute bottom-2 p-6">
+                        <p class="text-white text-2xl font-bold dark:text-gray-100">Pod race</p>
+                        <p class="text-white dark:text-gray-200">Mos Espa</p>
+                    </div>
+                </div>
+                <!-- / Exp Card 5 -->
+                
+                    </div>
+                    
+                </section>
+                <!-- / Experiences -->
+                
+            </main> 
+            
+            <!-- Footer -->
+            <footer class="w-full h-auto mt-8 text-center bg-footer bg-cover bg-center relative dark:bg-footer-dark">
+                <div class="p-6 md:max-w-screen-xl m-auto">
+                    <h4 class="text-4xl mb-10 text-secundary">Subscribe <br>to the Newsletter</h4>
+                    <div class="flex md:max-w-screen-sm m-auto space-x-2">
+                        <input class="rounded-3xl p-4 outline-none shadow-md w-8/12 transition duration-300 focus-within:shadow-sm focus:scale-110" placeholder="Your email" type="search" name="" id="">
+                        <button class="BtnPrimary">
+                            Send now
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6 mb-8">
+                    <ul class="list-none flex flex-col md:flex-row justify-center md:space-x-6">
+                        <li class="uppercase font-semibold w-fit m-auto md:m-2 dark:text-gray-100 border-b-2 border-transparent hover:border-primary dark:text-gray-100"><a href="#">Home</a></li>
+                        <li class="uppercase font-semibold w-fit m-auto md:m-2 dark:text-gray-100 border-b-2 border-transparent hover:border-primary dark:text-gray-100">About us</li>
+                        <li class="uppercase font-semibold w-fit m-auto md:m-2 dark:text-gray-100 border-b-2 border-transparent hover:border-primary dark:text-gray-100">Contact us</li>
+                    </ul>
+                </div>
+                <div class="text-center bottom-0 p-8">This website was made for educational purposes only and is not under the Disney signature.</div>
+            </footer>
+            <!-- / Footer -->
+            
+            <!-- Tab Bar -->
+            <div id="tab-bar" class="z-50 md:hidden w-full h-16 p-2 rounded-t-3xl bg-white dark:bg-gray-700 fixed left-0 bottom-0 shadow-inner flex space-x-4 justify-around items-center">
+                
+                <!-- Icon Search -->
+                <a href="#hero" class="group rounded-3xl p-2 transition ease-in-out hover:bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path class="fill-current text-transparent stroke-gray-400 dark:stroke-gray-200 group-hover:stroke-white" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>                           
+                </a>
+                <!-- / Icon Search -->
+                <!-- Icon Categories -->
+                <a href="#categories" class="group rounded-3xl p-2 transition ease-in-out hover:bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path class="fill-current text-transparent stroke-gray-400 dark:stroke-gray-200 group-hover:stroke-white" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>                        
+                </a>
+                <!-- / Icon Categories -->
+                <!-- Icon Heart -->
+                <a href="#popular" class="group rounded-3xl p-2 transition ease-in-out hover:bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path class="fill-current text-transparent stroke-gray-400 dark:stroke-gray-200 group-hover:stroke-white" stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                      </svg>                                              
+                </a>
+                <!-- / Icon Heart -->
+                <!-- Icon Experiences -->
+                <a href="#experiences" class="group rounded-3xl p-2 transition ease-in-out hover:bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path class="fill-current text-transparent stroke-gray-400 dark:stroke-gray-200 group-hover:stroke-white" stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                      </svg>                                            
+                </a>
+                <!-- / Icon Experiences -->
+                <!-- Icon Dark Mode -->
+                <a id="toggle-small" class="group rounded-3xl p-2 transition ease-in-out hover:bg-primary">
+                    <svg class="block dark:hidden w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path class="fill-current text-transparent stroke-gray-400 dark:stroke-gray-200 group-hover:stroke-white" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    </svg>    
+                    <svg class="hidden dark:block w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path class="fill-current text-transparent stroke-gray-400 dark:stroke-gray-200 group-hover:stroke-white" stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                    </svg>                                                              
+                </a>
+                <!-- / Icon Dark Mode -->
+
+                  
+            </div>
+            <!-- / Tab Bar -->
+
+
+    <script>
+
+        // Parallax effect hero
+        var layer1 = document.getElementById('layer1')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',
+        function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.height = (60 + scroll/40) + '%';
+        });
+
+        var discover = document.getElementById('discover')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',
+        function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            discover.style.marginTop = (scroll/20) + '%';
+        });
+
+
+        // Toggle for Mobile menu
+        const menuButton = document.querySelector('#menu-button');
+        const menu = document.querySelector('#menu');
+
+        menuButton.addEventListener("click", () => showMenu() )
+
+        const showMenu = () => {
+            menu.classList.toggle("hidden");
+        };
+
+        // Toggle for Dark Mode
+        const htmlElement = document.querySelector("html");
+        const toggleButton = document.querySelector("#toggle");
+        const toggleButtonSm = document.querySelector("#toggle-small");
+
+        toggleButton.addEventListener("click", () => toggleDarkMode() )
+        toggleButtonSm.addEventListener("click", () => toggleDarkMode() )
+
+        const toggleDarkMode = () => {
+            htmlElement.classList.contains("dark") ? 
+                htmlElement.classList.remove("dark") : 
+                htmlElement.classList.add("dark");
+        };
+    </script>
+
+        </body>
+        </html>
